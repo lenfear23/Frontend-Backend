@@ -3,12 +3,49 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Digitális Képkeret</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
 </head>
 <body>
-    <p>This is a template</p>    
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+    <input type="url" id="url" class="form-control" placeholder="Image url">
+</div>
+<div class="col-md-3">
+    <input type="number" id="width" class="form-control" placeholder="Image width">
+</div>
+<div class="col-md-3">
+    <input type="number" id="thickness" class="form-control" placeholder="Image height">
+</div>
+    <div class="col-md-3">
+    <input type="color" id="colorborder" class="form-control">    
+</div>
+    <div class="col-md-3">
+    <img src="" id="image" style="border-style:solid ;">
+    </div>
+</div>
+</div>
+
+<footer>
+    <h2>Papp Dávid 2/14.T</h2>
+    <button id="mode">Dark</button>
+</footer>
+
+<style>
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    
+</style>
     <script src='main.js'></script>
 </body>
 </html>
